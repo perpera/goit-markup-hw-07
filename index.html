@@ -26,7 +26,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="header-container">
         <nav class="navigation">
           <a href="./index.html" class="link logo header-logo"
             >Web<span class="logo-dark-part">Studio</span></a
@@ -55,13 +55,11 @@
             </li>
           </ul>
         </address>
-        <div>
-          <button type="button" class="burger-btn btn js-open-menu">
-            <svg width="32" height="22">
-              <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
-            </svg>
-          </button>
-        </div>
+        <button type="button" class="burger-btn btn js-open-menu">
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -73,9 +71,9 @@
           </button>
         </div>
       </section>
-      <section class="section">
+      <section class="section dt-section">
         <div class="container">
-          <h2 hidden class="visually-hidden">Features</h2>
+          <h2 class="visually-hidden">Features</h2>
           <ul class="list">
             <li class="descr-item">
               <div class="icon-rect">
@@ -165,6 +163,7 @@
           <ul class="list">
             <li class="card team-card">
               <img
+                srcset="./images/photo1@2x.jpg 2x"
                 src="./images/photo1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -227,6 +226,7 @@
             </li>
             <li class="card team-card">
               <img
+                srcset="./images/photo2@2x.jpg 2x"
                 src="./images/photo2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -289,6 +289,7 @@
             </li>
             <li class="card team-card">
               <img
+                srcset="./images/photo3@2x.jpg 2x"
                 src="./images/photo3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -351,6 +352,7 @@
             </li>
             <li class="card team-card">
               <img
+                srcset="./images/photo4@2x.jpg 2x"
                 src="./images/photo4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -417,7 +419,7 @@
       <section class="section customers">
         <div class="container">
           <h2 class="team-title">Customers</h2>
-          <ul class="list">
+          <ul class="list customers-list">
             <li class="customers-item">
               <a href="" class="customers-link">
                 <svg class="customers-icon" width="104" height="56">
@@ -465,7 +467,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-cont">
+      <div class="footer-cont">
         <div class="footer-text-cont">
           <a href="./index.html" class="link logo footer-logo"
             >Web<span class="logo-light-part">Studio</span></a

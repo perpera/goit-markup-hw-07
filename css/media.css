@@ -5,11 +5,18 @@
   .menu-media-list {
     gap: 33px;
   }
+  .hero {
+    padding: 88px 24px;
+  }
+  .modal {
+    width: 312px;
+    padding: 64px 12px 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 786px;
+    max-width: 584px;
   }
   .mob-menu {
     display: none;
@@ -21,14 +28,195 @@
   .burger-btn {
     display: none;
   }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .section {
+    padding: 96px 92px;
+  }
+
+  .navigation {
+    align-items: center;
+  }
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-link {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark-title-color);
+    position: relative;
+    display: block;
+    padding: 24px 0;
+  }
+  .header-link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--pressed-state-color);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 150ms linear;
+    bottom: -1px;
+  }
+  .header-link:hover:after,
+  .header-link.current:after {
+    transform: scaleX(1);
+  }
+
+  .address {
+    font-style: normal;
+    margin-left: auto;
+  }
+
+  .address > .header-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .address-link {
+    color: var(--body-text-color);
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    display: block;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-image-tab.jpg);
+    max-width: 1000px;
+    padding: 112px 136px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-image-tab@2x.jpg);
+      max-width: 1000px;
+      padding: 112px 136px;
+    }
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    width: 496px;
+    margin-bottom: 36px;
+  }
+
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .dt-section {
+    padding: 96px 0;
+  }
+
+  .dt-section .container {
+    max-width: 768px;
+  }
+
+  .descr-item .card-title {
+    text-align: left;
+  }
+
+  .descr-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
+  }
+
+  .team-card {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
+  }
+
+  .customers-list {
+    justify-content: center;
+  }
+
+  .customers-item {
+    flex-basis: calc((100% - 48px) / 3);
+    margin-bottom: 0;
+  }
+
+  .footer {
+    padding: 96px 92px;
+  }
+
+  .footer-cont {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 0 24px;
+  }
+
+  .footer-logo {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .footer-media-text {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-form-input {
+    width: 264px;
+  }
+
+  .footer-form-label {
+    text-align: left;
+  }
+
+  .footer-form-btn {
+    margin: 0;
+  }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .header-container {
+    max-width: 1158px;
+    margin: 0 auto;
   }
 
   .section {
@@ -44,7 +232,158 @@
     gap: 24px;
   }
 
-  .header-list {
+  .card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .card-text {
+    font-weight: normal;
+  }
+
+  .address > .header-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-image.jpg);
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-image@2x.jpg);
+      max-width: 1440px;
+      padding: 188px 0;
+    }
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    height: 120px;
+    margin-bottom: 48px;
+  }
+
+  .dt-section .container {
+    max-width: 1158px;
+  }
+
+  .descr {
+    display: block;
+    background-color: var(--white-background-color);
+    padding: 0 0 120px 0;
+  }
+
+  .descr-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark-title-color);
+    margin-bottom: 72px;
+  }
+
+  .icon-rect {
+    background-color: var(--light-body-color);
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .descr-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .descr-img-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .descr-icon {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .team-card {
+    width: calc((100% - 72px) / 4);
+    margin: 0;
+  }
+
+  .member-title {
+    text-align: center;
+  }
+  .member-text {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .customers-item {
+    flex-basis: 0;
+    min-width: 168px;
+    height: 88px;
+  }
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-cont {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    max-width: 1158px;
+    margin: 0 auto;
+  }
+
+  .footer-text-cont {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .soc-media {
+    margin-bottom: 0;
+  }
+
+  .footer-form-container {
+    width: 453px;
+  }
+
+  .footer-form {
+    margin-left: 80px;
+    align-items: end;
+    gap: 24px;
+  }
+
+  .footer-form-input {
+    width: 264px;
+  }
+
+  .footer-form-label {
+    margin-bottom: 16px;
+    margin-left: 80px;
   }
 }

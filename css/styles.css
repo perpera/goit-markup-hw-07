@@ -649,6 +649,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 426px;
+  margin: 0 auto;
 }
 
 .footer-text {
@@ -700,7 +702,9 @@ img {
 }
 
 .footer-form-container {
-  width: calc(100vw - 16px);
+  width: calc(100% - 16px);
+  max-width: 426px;
+  margin: 0 auto;
 }
 
 .footer-form {
@@ -723,7 +727,6 @@ img {
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   opacity: 0.3;
-  border-radius: 4px;
   border-radius: 4px;
   background-color: transparent;
   font-size: 12px;

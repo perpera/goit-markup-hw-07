@@ -39,6 +39,11 @@
     padding: 96px 92px;
   }
 
+  .header-container {
+    height: 100%;
+    padding: 0 16px;
+  }
+
   .navigation {
     align-items: center;
   }
@@ -81,7 +86,7 @@
 
   .address {
     font-style: normal;
-    margin-left: auto;
+    margin: 16px 0 16px auto;
   }
 
   .address > .header-list {
@@ -176,6 +181,7 @@
     justify-content: flex-start;
     align-items: baseline;
     gap: 0 24px;
+    max-width: 552px;
   }
 
   .footer-logo {
@@ -186,6 +192,10 @@
   .footer-media-text {
     margin: 0;
     margin-bottom: 16px;
+  }
+
+  .footer-form-container {
+    margin: 0;
   }
 
   .footer-form {
@@ -242,7 +252,20 @@
     font-weight: normal;
   }
 
-  .address > .header-list {
+  .header-container {
+    padding: 0;
+  }
+
+  .header-logo {
+    margin-right: 76px;
+  }
+
+  .address {
+    margin: 0 0 0 auto;
+  }
+
+  .address > .header-list,
+  .navigation > .header-list {
     flex-direction: row;
     gap: 40px;
   }
@@ -351,12 +374,17 @@
     padding: 100px 0;
   }
 
+  .footer-logo {
+    padding: 0;
+  }
+
   .footer-cont {
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
     max-width: 1158px;
     margin: 0 auto;
+    gap: 0;
   }
 
   .footer-text-cont {
@@ -370,10 +398,10 @@
 
   .footer-form-container {
     width: 453px;
+    margin-left: auto;
   }
 
   .footer-form {
-    margin-left: 80px;
     align-items: end;
     gap: 24px;
   }
@@ -384,6 +412,5 @@
 
   .footer-form-label {
     margin-bottom: 16px;
-    margin-left: 80px;
   }
 }
